@@ -1,4 +1,3 @@
-
 from tkinter import *
 from tkinter import ttk
 import socket
@@ -8,16 +7,17 @@ root = Tk()
 root.geometry("400x600")
 root.resizable(0,0)
 root.title("Inicia sessió")
+root.config(bg="#ccdadd")
 
 logo_clogin = PhotoImage(file="logo.png")
 zoom = logo_clogin.subsample(7)
-foto = Label(root, image=zoom)
+foto = Label(root, image=zoom, bg="#ccdadd")
 foto.place(x=125, y=0)
 
-nom_usuari = Label(root, text="Nom d'usuari", font=("Calibri", 18))
+nom_usuari = Label(root, text="Nom d'usuari", font=("Calibri", 18), bg="#ccdadd")
 nom_usuari.place(x=125, y=150)
 
-contrasenya = Label(root, text="Contrasenya", font=("Calibri", 18))
+contrasenya = Label(root, text="Contrasenya", font=("Calibri", 18), bg="#ccdadd")
 contrasenya.place(x=125, y=260)
 
 inp_nom = ttk.Entry(root, font=("Calibri", 18), width=28)
@@ -29,7 +29,7 @@ inp_contrasenya.config(show="*")
 
 imagen_singup = PhotoImage(file="singup.png")
 img = imagen_singup.subsample(5)
-boton_singup = Button(root, image=img, borderwidth=0)
+boton_singup = Button(root, image=img, borderwidth=0, bg="#ccdadd")
 boton_singup.place(x=125, y=370)
 
 root.mainloop()
