@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import ttk
 import socket
 import threading
 
@@ -20,10 +19,10 @@ nom_usuari.place(x=128, y=150)
 contrasenya = Label(root, text="Contrasenya", font=("Calibri", 18), bg="#ccdadd")
 contrasenya.place(x=130, y=260)
 
-inp_nom = ttk.Entry(root, font=("Calibri", 18), width=28)
+inp_nom = Entry(root, font=("Calibri", 18), width=28)
 inp_nom.place(x=28, y=200)
 
-inp_contrasenya = ttk.Entry(root, font=("Calibri", 18), width=28)
+inp_contrasenya = Entry(root, font=("Calibri", 18), width=28)
 inp_contrasenya.place(x=28, y=300)
 inp_contrasenya.config(show="*")
 
